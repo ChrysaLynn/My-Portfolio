@@ -63,10 +63,10 @@ const linkedinIcon = document.getElementsByClassName('fa-linkedin');
 
 linkedinIcon[0].href = data.links.linkedIn;
 
-// function consoleDisplay(string) {
-//     return console.log(string);
-// }
-// consoleDisplay('Feet');
 
 
 
+
+// #1: make a new branch off of your main (or maybe it’s called ‘master’? Can’t remember) branch. 
+// #2: get one of the projects to show up - you can delete the others, and just make it so one is showing - this all in JS like we’ve done with the other elements on the page. 
+// #3: Push the branch and open a PR. Then assign it to me for review (def google this process so you can begin to learn it) 
