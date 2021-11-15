@@ -70,3 +70,42 @@ linkedinIcon[0].href = data.links.linkedIn;
 // #1: make a new branch off of your main (or maybe it’s called ‘master’? Can’t remember) branch. 
 // #2: get one of the projects to show up - you can delete the others, and just make it so one is showing - this all in JS like we’ve done with the other elements on the page. 
 // #3: Push the branch and open a PR. Then assign it to me for review (def google this process so you can begin to learn it) 
+
+// const generateProjectCard = (title, desc, image) => {
+
+// }
+
+const projectContainer = document.getElementById('project-container');
+
+for (let i = 0; i < data.projects.length; i++) {
+    let projectCard = document.createElement('article');
+    projectCard.classList.add(
+        'col-6', 
+        'col-12-xsmall' ,
+        'work-item'
+    );
+    
+    let projectDesc = document.createElement('p');
+    projectDesc.textContent = data.projects[i].desc;
+    let projectTitle = document.createElement('h3');
+    projectTitle.textContent = data.projects[i].title;
+    
+    let projectLink = document.createElement('a');
+    projectLink.href = data.projects[i].image;
+    let projectImage = document.createElement('img');
+    projectImage.src = data.projects[i].image;
+    projectLink.classList.add(
+        'image',
+        'fit',
+        'thumb'
+    );
+
+    projectLink.append(projectImage)
+    projectCard.append(projectLink)
+
+    projectCard.append(projectTitle)
+    projectCard.append(projectDesc)
+
+    projectContainer.append(projectCard)
+
+}
