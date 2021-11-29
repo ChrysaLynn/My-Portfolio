@@ -4,7 +4,7 @@ const data = {
     lastName: 'Parker',
     jobTitle: 'junior developer',
     location: 'Eugene, OR',
-    aboutMe: 'My name is Chrysalis and I am a junior developer based in Eugene, Oregon. Lorem ipsum blah blah blah.',
+    aboutMe: 'My name is Chrysalis and I am a junior web developer based in Eugene, Oregon.',
     year: new Date().getFullYear(),
     sections: [
         'About Me',
@@ -12,16 +12,18 @@ const data = {
     ],
     projects: [ // Don't use yet lol you don't know how
         {
-            title: 'Magna sed consequat 1',
-            desc: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
-            image: 'images/thumbs/01.jpg'
+            title: 'Random Quote Generator',
+            desc: 'The user clicks a button and is presented with a random inspirational quote.',
+            image: 'images/thumbs/01.jpg',
+            url: 'https://chrysalynn.github.io/random_quote_generator/'
         },
-        {
-            title: 'Magna sed consequat 2',
-            desc: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
-            image: 'images/thumbs/02.jpg'
-        },
-    ],
+    //     {
+    //         title: 'Second project',
+    //         desc: '',
+    //         image: 'images/thumbs/01.jpg',
+    //         url: 'https://chrysalynn.github.io/random_quote_generator/'
+    //     },
+     ],
     links: {
         github: 'https://github.com/chrysalynn',
         email: 'mailto:chrysalis.parker@gmail.com',
@@ -77,6 +79,8 @@ linkedinIcon[0].href = data.links.linkedIn;
 
 const projectContainer = document.getElementById('project-container');
 
+// Project Cards
+
 for (let i = 0; i < data.projects.length; i++) {
     let projectCard = document.createElement('article');
     projectCard.classList.add(
@@ -90,6 +94,15 @@ for (let i = 0; i < data.projects.length; i++) {
     let projectTitle = document.createElement('h3');
     projectTitle.textContent = data.projects[i].title;
     
+    const projectLinkBtn = document.createElement('a');
+    projectLinkBtn.href = data.projects[i].url;
+    projectLinkBtn.textContent = 'Live demo';
+    projectLinkBtn.target = '_blank';
+    projectLinkBtn.classList.add(
+        'button'
+    );
+
+
     let projectLink = document.createElement('a');
     projectLink.href = data.projects[i].image;
     let projectImage = document.createElement('img');
@@ -105,6 +118,7 @@ for (let i = 0; i < data.projects.length; i++) {
 
     projectCard.append(projectTitle)
     projectCard.append(projectDesc)
+    projectCard.append(projectLinkBtn)
 
     projectContainer.append(projectCard)
 
