@@ -4,7 +4,7 @@ const data = {
     lastName: 'Parker',
     jobTitle: 'junior developer',
     location: 'Eugene, OR',
-    aboutMe: 'My name is Chrysalis and I am a junior web developer based in Eugene, Oregon.',
+    aboutMe: 'My name is Chrysalis and I am a junior web developer based in Eugene, Oregon. I love computers so much, omg.',
     year: new Date().getFullYear(),
     sections: [
         'About Me',
