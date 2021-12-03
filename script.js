@@ -4,17 +4,17 @@ const data = {
     lastName: 'Parker',
     jobTitle: 'junior developer',
     location: 'Eugene, OR',
-    aboutMe: 'My name is Chrysalis and I am a junior web developer based in Eugene, Oregon. I love computers so much, omg.',
+    aboutMe: 'My name is Chrysalis Parker and I am a junior web developer based in Eugene, Oregon. I\'m passionate about writing clean and scalable code with a strong accessibility UX/UI focus. I believe that as the world\'s technologies continue to evolve, so to does the spotlight on day-to-day convenience.',
     year: new Date().getFullYear(),
     sections: [
         'About Me',
         'Projects',
     ],
-    projects: [ // Don't use yet lol you don't know how
+    projects: [
         {
             title: 'Random Quote Generator',
             desc: 'The user clicks a button and is presented with a random inspirational quote.',
-            image: 'images/thumbs/01.jpg',
+            image: 'images/rndm-qut.png',
             url: 'https://chrysalynn.github.io/random_quote_generator/'
         },
     //     {
