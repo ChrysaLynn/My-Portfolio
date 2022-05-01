@@ -17,12 +17,18 @@ const data = {
             image: 'images/rndm-qut.png',
             url: 'https://chrysalynn.github.io/random_quote_generator/'
         },
-    //     {
-    //         title: 'Second project',
-    //         desc: '',
-    //         image: 'images/thumbs/01.jpg',
-    //         url: 'https://chrysalynn.github.io/random_quote_generator/'
-    //     },
+        {
+            title: 'Data Pagination',
+            desc: 'The user is able to click through a list of 42 student\'s with the aid of the technique known as pagination.',
+            image: 'images/student_list.png',
+            url: 'https://chrysalynn.github.io/data_pagination_and_filtering/'
+        },
+        {
+            title: 'Basic Quiz',
+            desc: 'A simple mathematical addition quiz made with basic JavaScript.',
+            image: 'images/js-test-icn.png',
+            url: 'https://chrysalynn.github.io/quizJS-challenge/'
+        }
      ],
     links: {
         github: 'https://github.com/chrysalynn',
