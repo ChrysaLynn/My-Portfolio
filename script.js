@@ -4,7 +4,7 @@ const data = {
     lastName: 'Parker',
     jobTitle: 'junior developer',
     location: 'Eugene, OR',
-    aboutMe: 'My name is Chrysalis Parker and I am a junior web developer based in Eugene, Oregon. I\'m passionate about writing clean and scalable code with a strong accessibility UX/UI focus. I believe that as the world\'s technologies continue to evolve, so to does the spotlight on day-to-day convenience.',
+    aboutMe: 'My name is Chrysalis Parker and I am a junior web developer based in Eugene, Oregon. I\'m passionate about writing clean and scalable code with a strong accessibility UX/UI focus. I believe that as the world\'s technologies continue to evolve, so too does the spotlight on day-to-day convenience.',
     year: new Date().getFullYear(),
     sections: [
         'About Me',
